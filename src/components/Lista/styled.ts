@@ -24,6 +24,18 @@ margin-right: 8px;
 justify-content: space-evenly;
 align-items: center;
 `;
+
+export const Dot = styled.View`
+width: 10px;
+height: 10px;
+border-width: 1px;
+border-color: ${theme.colors.secondary60};
+border-radius: 3px;
+position: absolute;
+right: 5px;
+top: 5px;
+`;
+
 export const Titulo = styled.Text`
 font-size: 15px;
 color: ${theme.colors.heading};

@@ -11,7 +11,7 @@ flex: 1;
 `;
 export const Separador = styled.View`
 width: 70%;
-height: 1px;
-background-color: ${theme.colors.secondary90};
+height: 0.7px;
+background-color: ${theme.colors.secondary40};
 align-self: flex-end;
 `;
