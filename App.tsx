@@ -1,9 +1,19 @@
 import React from 'react'
-import { View, Text } from 'react-native'
-import Splash from './src/screens/Splash'
+import Authroutes from './src/routes/auth.routes'
+import { NavigationContainer } from '@react-navigation/native'
+import { StatusBar } from 'react-native'
+import { theme } from './src/global/style/theme'
 
 export default function App() {
   return (
-    <Splash/>
+    <>
+    <StatusBar
+            backgroundColor={theme.colors.secondary90}
+            translucent
+            />
+    <NavigationContainer>
+      <Authroutes/>
+    </NavigationContainer>
+    </>
   )
 }
