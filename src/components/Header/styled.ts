@@ -23,6 +23,8 @@ width: 55px;
 height: 55px;
 background-color: ${theme.colors.primary};
 border-radius: 8px;
+justify-content: center;
+align-items: center;
 `;
 
 export const TextContainer = styled.View`

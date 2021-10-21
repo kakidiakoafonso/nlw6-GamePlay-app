@@ -1,3 +1,4 @@
+import { useNavigation } from '@react-navigation/core'
 import React from 'react'
 import { View, Text } from 'react-native'
 import Calendario from '../../assets/calendar.svg'
@@ -10,10 +11,18 @@ import { Container, Contents, ImageContent, TextTipo, TextTop, TopContents,
 
 const uri = 'https://avatars.githubusercontent.com/u/22997881?v=4'
 const tamanho = 15
-export default function Partidas() 
+
+type Props = 
 {
+    handleClick: ()=>void
+}
+export default function Partidas({handleClick}:Props) 
+{
+    const nav = useNavigation()
     return (
-        <Container>
+        <Container activeOpacity={0.5}
+            onPress={()=>handleClick()}
+        >
             <ImageContent source={{uri}}/>
             <Contents>
                 <TopContents>

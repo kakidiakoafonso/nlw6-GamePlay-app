@@ -2,7 +2,7 @@ import styled from 'styled-components/native'
 import {theme} from '../../global/style/theme'
 
 
-export const Container = styled.View`
+export const Container = styled.TouchableOpacity`
 width: 90%;
 height: 90px;
 justify-content: space-around;
